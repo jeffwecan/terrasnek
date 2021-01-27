@@ -524,6 +524,44 @@
         "test": true,
         "url": "https://www.terraform.io/docs/cloud/api/cost-estimates.html"
     },
+    "feature_sets": {
+        "methods": [
+            {
+                "description": "List Feature Sets",
+                "http-path": "GET /feature-sets",
+                "implementation-method-name": null,
+                "implemented": false,
+                "permalink": "#list-feature-sets"
+            },
+            {
+                "description": "List Feature Sets for Organization",
+                "http-path": "GET /organizations/:organization_name/feature-sets",
+                "implementation-method-name": null,
+                "implemented": false,
+                "permalink": "#list-feature-sets-for-organization"
+            }
+        ],
+        "url": "https://www.terraform.io/docs/cloud/api/feature-sets.html"
+    },
+    "invoices": {
+        "methods": [
+            {
+                "description": "List Invoices",
+                "http-path": "GET /organizations/:organization_name/invoices",
+                "implementation-method-name": null,
+                "implemented": false,
+                "permalink": "#list-invoices"
+            },
+            {
+                "description": "Get Next Invoice",
+                "http-path": "GET /organizations/:organization_name/invoices/next",
+                "implementation-method-name": null,
+                "implemented": false,
+                "permalink": "#get-next-invoice"
+            }
+        ],
+        "url": "https://www.terraform.io/docs/cloud/api/invoices.html"
+    },
     "ip_ranges": {
         "docs": true,
         "implementation": true,
@@ -901,7 +939,29 @@
     "policy_checks": {
         "docs": true,
         "implementation": true,
-        "methods": [],
+        "methods": [
+            {
+                "description": "List Policy Checks",
+                "http-path": "GET /runs/:run_id/policy-checks",
+                "implementation-method-name": "list",
+                "implemented": true,
+                "permalink": "#list-policy-checks"
+            },
+            {
+                "description": "Show Policy Check",
+                "http-path": "GET /policy-checks/:id",
+                "implementation-method-name": null,
+                "implemented": false,
+                "permalink": "#show-policy-check"
+            },
+            {
+                "description": "Override Policy",
+                "http-path": "POST /policy-checks/:id/actions/override",
+                "implementation-method-name": null,
+                "implemented": false,
+                "permalink": "#override-policy"
+            }
+        ],
         "test": true,
         "url": "https://www.terraform.io/docs/cloud/api/policy-checks.html"
     },
@@ -1304,6 +1364,25 @@
         ],
         "test": true,
         "url": "https://www.terraform.io/docs/cloud/api/state-versions.html"
+    },
+    "subscriptions": {
+        "methods": [
+            {
+                "description": "Show Subscription For Organization",
+                "http-path": "GET /organizations/:organization_name/subscription",
+                "implementation-method-name": null,
+                "implemented": false,
+                "permalink": "#show-subscription-for-organization"
+            },
+            {
+                "description": "Show Subscription By ID",
+                "http-path": "GET /subscriptions/:id",
+                "implementation-method-name": null,
+                "implemented": false,
+                "permalink": "#show-subscription-by-id"
+            }
+        ],
+        "url": "https://www.terraform.io/docs/cloud/api/subscriptions.html"
     },
     "team_access": {
         "docs": true,

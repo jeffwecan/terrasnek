@@ -14,6 +14,8 @@
 | [Audit Trails](https://www.terraform.io/docs/cloud/api/audit-trails.html)                         | `audit_trails`             | True                 | True       | True       |
 | [Config Versions](https://www.terraform.io/docs/cloud/api/configuration-versions.html)            | `config_versions`          | True                 | True       | True       |
 | [Cost Estimates](https://www.terraform.io/docs/cloud/api/cost-estimates.html)                     | `cost_estimates`           | True                 | True       | True       |
+| [Feature Sets](https://www.terraform.io/docs/cloud/api/feature-sets.html)                         | `feature_sets`             | False                | False      | False      |
+| [Invoices](https://www.terraform.io/docs/cloud/api/invoices.html)                                 | `invoices`                 | False                | False      | False      |
 | [Ip Ranges](https://www.terraform.io/docs/cloud/api/ip-ranges.html)                               | `ip_ranges`                | True                 | True       | True       |
 | [Notification Configs](https://www.terraform.io/docs/cloud/api/notification-configurations.html)  | `notification_configs`     | True                 | True       | True       |
 | [Oauth Clients](https://www.terraform.io/docs/cloud/api/oauth-clients.html)                       | `oauth_clients`            | True                 | True       | True       |
@@ -33,6 +35,7 @@
 | [Ssh Keys](https://www.terraform.io/docs/cloud/api/ssh-keys.html)                                 | `ssh_keys`                 | True                 | True       | True       |
 | [State Version Outputs](https://www.terraform.io/docs/cloud/api/state-version-outputs.html)       | `state_version_outputs`    | True                 | True       | True       |
 | [State Versions](https://www.terraform.io/docs/cloud/api/state-versions.html)                     | `state_versions`           | True                 | True       | True       |
+| [Subscriptions](https://www.terraform.io/docs/cloud/api/subscriptions.html)                       | `subscriptions`            | False                | False      | False      |
 | [Team Access](https://www.terraform.io/docs/cloud/api/team-access.html)                           | `team_access`              | True                 | True       | True       |
 | [Team Memberships](https://www.terraform.io/docs/cloud/api/team-members.html)                     | `team_memberships`         | True                 | True       | True       |
 | [Team Tokens](https://www.terraform.io/docs/cloud/api/team-tokens.html)                           | `team_tokens`              | True                 | True       | True       |
