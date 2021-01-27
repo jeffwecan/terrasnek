@@ -525,6 +525,7 @@
         "url": "https://www.terraform.io/docs/cloud/api/cost-estimates.html"
     },
     "feature_sets": {
+        "docs": true,
         "implementation": true,
         "methods": [
             {
@@ -537,8 +538,8 @@
             {
                 "description": "List Feature Sets for Organization",
                 "http-path": "GET /organizations/:organization_name/feature-sets",
-                "implementation-method-name": null,
-                "implemented": false,
+                "implementation-method-name": "list_for_org",
+                "implemented": true,
                 "permalink": "#list-feature-sets-for-organization"
             }
         ],
@@ -546,22 +547,25 @@
         "url": "https://www.terraform.io/docs/cloud/api/feature-sets.html"
     },
     "invoices": {
+        "docs": true,
+        "implementation": true,
         "methods": [
             {
                 "description": "List Invoices",
                 "http-path": "GET /organizations/:organization_name/invoices",
-                "implementation-method-name": null,
-                "implemented": false,
+                "implementation-method-name": "list",
+                "implemented": true,
                 "permalink": "#list-invoices"
             },
             {
                 "description": "Get Next Invoice",
                 "http-path": "GET /organizations/:organization_name/invoices/next",
-                "implementation-method-name": null,
-                "implemented": false,
+                "implementation-method-name": "next",
+                "implemented": true,
                 "permalink": "#get-next-invoice"
             }
         ],
+        "test": true,
         "url": "https://www.terraform.io/docs/cloud/api/invoices.html"
     },
     "ip_ranges": {

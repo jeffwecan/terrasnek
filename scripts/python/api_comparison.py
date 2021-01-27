@@ -194,6 +194,8 @@ def check_methods_implementation(endpoints):
             method["implemented"] = False
             method["implementation-method-name"] = None
             most_recent_method_name = None
+
+
             for line in split_by_func_def:
                 if "def" in line:
                     most_recent_method_name = line.split("(")[0].replace("def", "").strip()
@@ -202,6 +204,9 @@ def check_methods_implementation(endpoints):
                     method["implemented"] = True
                     method["implementation-method-name"] = most_recent_method_name
                     break
+                else:
+                    if "feature-sets" in path.lower():
+                        print("NO MATCH FOUND", path, line)
 
     return endpoints
 

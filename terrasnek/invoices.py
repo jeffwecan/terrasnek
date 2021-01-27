@@ -27,18 +27,17 @@ class TFCInvoices(TFCEndpoint):
 
     def list(self):
         """
-        ``GET /organizations/:org_name/invoices``
-
-        # TODO: cursor pagination
+        ``GET /organizations/:organization_name/invoices``
 
         `Invoices List API Doc Reference \
             <https://www.terraform.io/docs/cloud/api/invoices.html#list-invoices>`_
         """
+        # TODO: cursor pagination
         return self._list(self._org_base_url)
 
     def next(self):
         """
-        ``GET /organizations/:org_name/invoices/next``
+        ``GET /organizations/:organization_name/invoices/next``
 
         `Invoices Get Next API Doc Reference \
             <https://www.terraform.io/docs/cloud/api/invoices.html#get-next-invoice>`_

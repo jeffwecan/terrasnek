@@ -134,6 +134,8 @@ _For more examples, see the `./test` directory in the repository._
 * [Audit Trails](audit_trails.md)
 * [Config Versions](config_versions.md)
 * [Cost Estimates](cost_estimates.md)
+* [Feature Sets](feature_set.md)
+* [Invoices](invoices.md)
 * [IP Ranges](ip_ranges.md)
 * [Notification Configurations](notification_configs.md)
 * [OAuth Clients](oauth_clients.md)

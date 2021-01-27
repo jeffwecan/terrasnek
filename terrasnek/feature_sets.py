@@ -37,7 +37,7 @@ class TFCFeatureSets(TFCEndpoint):
 
     def list_for_org(self):
         """
-        ``GET /organizations/:org_name/feature-sets``
+        ``GET /organizations/:organization_name/feature-sets``
 
         `Feature Sets List for Orgs API Doc Reference \
             <https://www.terraform.io/docs/cloud/api/feature-sets.html#list-feature-sets-for-organization>`_
