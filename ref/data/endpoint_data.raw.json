@@ -525,12 +525,13 @@
         "url": "https://www.terraform.io/docs/cloud/api/cost-estimates.html"
     },
     "feature_sets": {
+        "implementation": true,
         "methods": [
             {
                 "description": "List Feature Sets",
                 "http-path": "GET /feature-sets",
-                "implementation-method-name": null,
-                "implemented": false,
+                "implementation-method-name": "list",
+                "implemented": true,
                 "permalink": "#list-feature-sets"
             },
             {
@@ -541,6 +542,7 @@
                 "permalink": "#list-feature-sets-for-organization"
             }
         ],
+        "test": true,
         "url": "https://www.terraform.io/docs/cloud/api/feature-sets.html"
     },
     "invoices": {
