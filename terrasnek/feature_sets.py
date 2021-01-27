@@ -7,7 +7,7 @@ from .endpoint import TFCEndpoint
 class TFCFeatureSets(TFCEndpoint):
     """
     `Feature Sets API Docs \
-        <https://www.terraform.io/docs/cloud/api/feature-sets.html`_
+        <https://www.terraform.io/docs/cloud/api/feature-sets.html>`_
     """
 
     def __init__(self, instance_url, org_name, headers, well_known_paths, verify, log_level):
@@ -17,6 +17,7 @@ class TFCFeatureSets(TFCEndpoint):
             f"{self._api_v2_base_url}/organizations/{org_name}/feature-sets"
 
     def required_entitlements(self):
+        # TODO
         return []
 
     def terraform_cloud_only(self):
