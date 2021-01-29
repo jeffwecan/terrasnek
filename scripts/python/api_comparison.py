@@ -204,9 +204,6 @@ def check_methods_implementation(endpoints):
                     method["implemented"] = True
                     method["implementation-method-name"] = most_recent_method_name
                     break
-                else:
-                    if "feature-sets" in path.lower():
-                        print("NO MATCH FOUND", path, line)
 
     return endpoints
 

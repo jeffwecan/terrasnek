@@ -15,7 +15,7 @@ class TestTFCInvoices(TestTFCBaseTestCase):
 
     def test_invoices(self):
         """
-        Test the Invoice API endpoints.
+        Test the Invoices API endpoints.
         """
         # TODO: this will fail when I don't have a billing item associated
         invoices = self._api.invoices.list()

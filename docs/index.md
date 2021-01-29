@@ -155,6 +155,7 @@ _For more examples, see the `./test` directory in the repository._
 * [SSH Keys](ssh_keys.md)
 * [State Versions](state_versions.md)
 * [State Version Outputs](state_version_outputs.md)
+* [Subscriptions](subscriptions.md)
 * [Team Access](team_access.md)
 * [Team Memberships](team_memberships.md)
 * [Team Tokens](team_tokens.md)

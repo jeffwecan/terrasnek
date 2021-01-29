@@ -63,9 +63,9 @@
             },
             {
                 "description": "Update an Organization",
-                "http-path": "PATCH /organizations/:organization_name",
-                "implementation-method-name": "update",
-                "implemented": true,
+                "http-path": "PATCH /admin/organizations/:organization_name",
+                "implementation-method-name": null,
+                "implemented": false,
                 "permalink": "#update-an-organization"
             },
             {
@@ -1372,22 +1372,25 @@
         "url": "https://www.terraform.io/docs/cloud/api/state-versions.html"
     },
     "subscriptions": {
+        "docs": true,
+        "implementation": true,
         "methods": [
             {
                 "description": "Show Subscription For Organization",
                 "http-path": "GET /organizations/:organization_name/subscription",
-                "implementation-method-name": null,
-                "implemented": false,
+                "implementation-method-name": "show",
+                "implemented": true,
                 "permalink": "#show-subscription-for-organization"
             },
             {
                 "description": "Show Subscription By ID",
                 "http-path": "GET /subscriptions/:id",
-                "implementation-method-name": null,
-                "implemented": false,
+                "implementation-method-name": "show_by_id",
+                "implemented": true,
                 "permalink": "#show-subscription-by-id"
             }
         ],
+        "test": true,
         "url": "https://www.terraform.io/docs/cloud/api/subscriptions.html"
     },
     "team_access": {

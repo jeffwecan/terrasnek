@@ -35,7 +35,7 @@
 | [Ssh Keys](https://www.terraform.io/docs/cloud/api/ssh-keys.html)                                 | `ssh_keys`                 | True                 | True       | True       |
 | [State Version Outputs](https://www.terraform.io/docs/cloud/api/state-version-outputs.html)       | `state_version_outputs`    | True                 | True       | True       |
 | [State Versions](https://www.terraform.io/docs/cloud/api/state-versions.html)                     | `state_versions`           | True                 | True       | True       |
-| [Subscriptions](https://www.terraform.io/docs/cloud/api/subscriptions.html)                       | `subscriptions`            | False                | False      | False      |
+| [Subscriptions](https://www.terraform.io/docs/cloud/api/subscriptions.html)                       | `subscriptions`            | True                 | True       | True       |
 | [Team Access](https://www.terraform.io/docs/cloud/api/team-access.html)                           | `team_access`              | True                 | True       | True       |
 | [Team Memberships](https://www.terraform.io/docs/cloud/api/team-members.html)                     | `team_memberships`         | True                 | True       | True       |
 | [Team Tokens](https://www.terraform.io/docs/cloud/api/team-tokens.html)                           | `team_tokens`              | True                 | True       | True       |
