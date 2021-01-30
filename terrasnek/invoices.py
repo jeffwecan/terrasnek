@@ -16,7 +16,7 @@ class TFCInvoices(TFCEndpoint):
             f"{self._api_v2_base_url}/organizations/{org_name}/invoices"
 
     def required_entitlements(self):
-        # TODO
+        ## TODO: self serve billing?
         return []
 
     def terraform_cloud_only(self):

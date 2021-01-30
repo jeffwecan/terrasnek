@@ -12,15 +12,13 @@ class TestTFCSubscriptions(TFCEndpoint):
 
     def __init__(self, instance_url, org_name, headers, well_known_paths, verify, log_level):
         super().__init__(instance_url, org_name, headers, well_known_paths, verify, log_level)
-        # TODO: this URL is not well defined
-        # SEE: https://www.terraform.io/docs/cloud/api/subscriptions.html#show-subscription-by-id
         self._subscriptions_base_url = \
             f"{self._api_v2_base_url}/subscriptions"
         self._org_base_url = \
             f"{self._api_v2_base_url}/organizations/{org_name}/subscription"
 
     def required_entitlements(self):
-        # TODO
+        ## TODO: self serve billing?
         return []
 
     def terraform_cloud_only(self):
