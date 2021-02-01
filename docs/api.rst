@@ -1,4 +1,4 @@
-API
+API Spec
 ===
 
 .. autoclass:: terrasnek.api.TFC
