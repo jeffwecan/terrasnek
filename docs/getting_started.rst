@@ -2,7 +2,7 @@ Getting Started
 ===============
 
 Recommended Env Var Usage
---------------------------
+-------------------------
 
 .. code:: python
 
@@ -12,7 +12,7 @@ Recommended Env Var Usage
    TFC_URL = os.getenv("TFC_URL", None)  # ex: https://app.terraform.io
 
 Using TLS
-----------
+---------
 
 .. code:: python
 
@@ -22,7 +22,7 @@ Using TLS
    api.set_org("YOUR_ORGANIZATION")
 
 Using Insecure TLS
----------
+------------------
 
 .. code:: python
 

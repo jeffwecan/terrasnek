@@ -1,10 +1,10 @@
-API Spec
+API
 ===
 
 .. autoclass:: terrasnek.api.TFC
    :members:
 
-Endpoints
+API Spec
 ------------
 
 .. toctree::
