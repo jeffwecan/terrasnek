@@ -1,6 +1,6 @@
 # Subscriptions
 
 ```eval_rst
-.. autoclass:: terrasnek.invoices.TFCSubscriptions
+.. autoclass:: terrasnek.subscriptions.TFCSubscriptions
    :members:
 ```

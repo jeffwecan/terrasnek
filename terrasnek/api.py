@@ -46,7 +46,7 @@ from .runs import TFCRuns
 from .state_versions import TFCStateVersions
 from .state_version_outputs import TFCStateVersionOutputs
 from .ssh_keys import TFCSSHKeys
-from .subscriptions import TestTFCSubscriptions
+from .subscriptions import TFCSubscriptions
 from .teams import TFCTeams
 from .team_access import TFCTeamAccess
 from .team_memberships import TFCTeamMemberships
@@ -112,7 +112,7 @@ class TFC():
             "ssh_keys": TFCSSHKeys,
             "state_versions": TFCStateVersions,
             "state_version_outputs": TFCStateVersionOutputs,
-            "subscriptions": TestTFCSubscriptions,
+            "subscriptions": TFCSubscriptions,
             "teams": TFCTeams,
             "team_access": TFCTeamAccess,
             "team_memberships": TFCTeamMemberships,

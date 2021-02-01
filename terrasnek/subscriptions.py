@@ -4,7 +4,7 @@ Module for Terraform Cloud API Endpoint: Subscriptions.
 
 from .endpoint import TFCEndpoint
 
-class TestTFCSubscriptions(TFCEndpoint):
+class TFCSubscriptions(TFCEndpoint):
     """
     `Subscriptions API Docs \
         <https://www.terraform.io/docs/cloud/api/subscriptions.html>`_

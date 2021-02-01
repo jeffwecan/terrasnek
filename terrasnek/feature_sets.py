@@ -17,7 +17,6 @@ class TFCFeatureSets(TFCEndpoint):
             f"{self._api_v2_base_url}/organizations/{org_name}/feature-sets"
 
     def required_entitlements(self):
-        # TODO
         return []
 
     def terraform_cloud_only(self):
