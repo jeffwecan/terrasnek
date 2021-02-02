@@ -1,9 +1,6 @@
 Examples
 ========
 
-*NOTE: Every endpoint supported in ``terrasnek`` has an API reference in
-its docstring*.
-
 Configure the API Class
 -----------------------
 
