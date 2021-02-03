@@ -206,10 +206,13 @@ class TFCEndpoint(ABC):
 
         return results
 
-    def _create(self, url, payload):
+    def _create(self, url, payload=None):
         """
         Implementation the common create resource pattern for the TFC API.
         """
+        if payload is None:
+            payload = {}
+
         return self._post(url, data=payload)
 
     def _destroy(self, url):
