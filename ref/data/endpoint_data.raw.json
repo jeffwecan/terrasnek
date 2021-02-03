@@ -929,15 +929,15 @@
             {
                 "description": "Show Policy Check",
                 "http-path": "GET /policy-checks/:id",
-                "implementation-method-name": null,
-                "implemented": false,
+                "implementation-method-name": "show",
+                "implemented": true,
                 "permalink": "#show-policy-check"
             },
             {
                 "description": "Override Policy",
                 "http-path": "POST /policy-checks/:id/actions/override",
-                "implementation-method-name": null,
-                "implemented": false,
+                "implementation-method-name": "override",
+                "implemented": true,
                 "permalink": "#override-policy"
             }
         ],
