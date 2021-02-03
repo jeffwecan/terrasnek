@@ -1,3 +1,5 @@
+# `terrasnek` API Coverage Completeness
+
 | API Endpoint             | Method Description                                                                                                                                             | HTTP Method                                                                         | Terrasnek Method                                | Implemented   |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------|---------------|
 | Account                  | [Get your account details](https://www.terraform.io/docs/cloud/api/account.html#get-your-account-details)                                                      | `GET /account/details`                                                              | `account.show`                                  | True          |
