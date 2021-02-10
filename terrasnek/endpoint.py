@@ -11,7 +11,7 @@ import requests
 from .exceptions import \
     TFCHTTPBadRequest, TFCHTTPUnauthorized, TFCHTTPForbidden, TFCHTTPNotFound, \
         TFCHTTPConflict, TFCHTTPPreconditionFailed, TFCHTTPUnprocessableEntity, \
-            TFCHTTPInternalServerError, TFCHTTPUnclassified, TFCHTTPApiRequestRateLimit
+            TFCHTTPInternalServerError, TFCHTTPUnclassified, TFCHTTPAPIRequestRateLimit
 
 from ._constants import \
     HTTP_OK, HTTP_CREATED, HTTP_ACCEPTED, HTTP_NO_CONTENT, HTTP_BAD_REQUEST, HTTP_UNAUTHORIZED, \
@@ -78,7 +78,7 @@ class TFCEndpoint(ABC):
         elif req.status_code == HTTP_API_REQUEST_RATE_LIMIT_REACHED:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
-            raise TFCHTTPApiRequestRateLimit(err)
+            raise TFCHTTPAPIRequestRateLimit(err)
         else:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
@@ -116,7 +116,7 @@ class TFCEndpoint(ABC):
         elif req.status_code == HTTP_API_REQUEST_RATE_LIMIT_REACHED:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
-            raise TFCHTTPApiRequestRateLimit(err)
+            raise TFCHTTPAPIRequestRateLimit(err)
         else:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
@@ -147,7 +147,7 @@ class TFCEndpoint(ABC):
         elif req.status_code == HTTP_API_REQUEST_RATE_LIMIT_REACHED:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
-            raise TFCHTTPApiRequestRateLimit(err)
+            raise TFCHTTPAPIRequestRateLimit(err)
         else:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
@@ -189,7 +189,7 @@ class TFCEndpoint(ABC):
         elif req.status_code == HTTP_API_REQUEST_RATE_LIMIT_REACHED:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
-            raise TFCHTTPApiRequestRateLimit(err)
+            raise TFCHTTPAPIRequestRateLimit(err)
         elif req.status_code == HTTP_INTERNAL_SERVER_ERROR:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
@@ -219,7 +219,7 @@ class TFCEndpoint(ABC):
         elif req.status_code == HTTP_API_REQUEST_RATE_LIMIT_REACHED:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
-            raise TFCHTTPApiRequestRateLimit(err)
+            raise TFCHTTPAPIRequestRateLimit(err)
         else:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
@@ -248,7 +248,7 @@ class TFCEndpoint(ABC):
         elif req.status_code == HTTP_API_REQUEST_RATE_LIMIT_REACHED:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)
-            raise TFCHTTPApiRequestRateLimit(err)
+            raise TFCHTTPAPIRequestRateLimit(err)
         else:
             err = json.loads(req.content.decode("utf-8"))
             self._logger.debug(err)

@@ -486,7 +486,6 @@ class TestTFCBaseTestCase(unittest.TestCase):
         """
         created_run = self._api.runs.show(run_id)["data"]
         while not created_run["attributes"]["actions"]["is-confirmable"]:
-            self._logger.debug("Waiting on plan to execute...")
             created_run = self._api.runs.show(run_id)["data"]
             self._logger.debug("Waiting for created run to finish planning...")
             time.sleep(1)
