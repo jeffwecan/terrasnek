@@ -107,7 +107,9 @@ class TestTFCRegistryModules(TestTFCBaseTestCase):
             self._api.registry_modules.list_versions(\
                 published_module_name, TFE_MODULE_PROVIDER_TYPE)
         latest_all_providers = listed_latest_version_all_providers["modules"][0]
-        self.assertEqual(latest_listed_version, latest_all_providers["versions"][-1]["version"])
+        latest_provider_versions = \
+            [provider_version["version"] for provider_version in latest_all_providers["versions"]]
+        self.assertIn(latest_listed_version, latest_provider_versions)
 
         # List the latest version for a specific provider, compare to the
         # published module version
@@ -115,7 +117,9 @@ class TestTFCRegistryModules(TestTFCBaseTestCase):
             self._api.registry_modules.list_versions(\
                 published_module_name, TFE_MODULE_PROVIDER_TYPE)
         latest_specific_provider = listed_latest_version_specific_provider["modules"][0]
-        self.assertEqual(latest_listed_version, latest_specific_provider["versions"][-1]["version"])
+        latest_specific_versions = \
+            [provider_version["version"] for provider_version in latest_specific_provider["versions"]]
+        self.assertIn(latest_listed_version, latest_specific_versions)
 
         # Download the source for a specific version of the module, confirm the file
         # was downloaded to the correct path (and then remove it).

@@ -40,8 +40,8 @@ class TestTFCRuns(TestTFCBaseTestCase):
         for payload in variable_payloads:
             self._api.vars.create(payload)
 
-        # Sleep for 3 seconds to give the WS time to create (can take longer on small TFE instances)
-        # TODO: I'd prefer to handle this in a more elegant way like how I wait for runs to plan.
+        # Sleep for 3 seconds to give the WS time to create, takes a bit longer
+        # on small TFE instances.
         time.sleep(3)
 
     def tearDown(self):
