@@ -78,6 +78,7 @@ class TestTFCBaseTestCase(unittest.TestCase):
         # a new one to run the testing in.
         if TEST_ORG_NAME:
             cls._test_org_name = TEST_ORG_NAME
+            cls._test_org = cls._api.orgs.show(cls._test_org_name)
         else:
             cls._test_org_name = cls._random_name()
             org_create_payload = {
